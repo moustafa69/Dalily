@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+
+.search{
+
+    flex-basis: 3000px !important;
+    border-radius: 15px !important;
+    background-color: #eee !important;
+    width: 200px !important;
+    opacity: .5;
+    font-family: Poppins;
+
+}
+
+.search_button{
+    outline-color: #4bb6b7 !important;
+    border-color: #4bb6b7 !important;
+    border-radius: 15px !important;
+    color: #4bb6b7 !important;
+
+}
+.search_button:hover{
+    
+    background-color: #4bb6b7 !important;
+    outline-color: #4bb6b7 !important;
+    color: azure !important;
+    
+}
+.navbar-brand{
+    background-color: #4bb6b7;
+    border-radius: 25px;
+    width: 120px !important;
+    padding: 5 20px 0 20px;
+    text-align: center;
+    color: white !important;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    height: 37px;
+}
+
+
+.navbar-brand:hover{
+    transition: 0.3s ease-in-out;
+    letter-spacing: 3px;
+}
+.nav-link{
+    cursor: pointer;
+}
+
+
+.new-pass-form{
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+h2{
+    font-family: Poppins;
+    text-align: center !important;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+.inputs{
+    width: 100%;
+    margin-bottom: 7%;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    background-color: #eee;
+    border-width: 0px;
+    font-family: Poppins;
+}
+img{
+    overflow: hidden;
+    width: 100% !important;
+}
+
+.container{
+    padding: 10%;
+}
+#email{
+    margin-top: 10%;
+}
+
+.new-pass-btn{
+    font-family: Poppins;
+    background-color:white;
+    color: #4bb6b7;
+    border: 1px solid #4bb6b7;
+    border-radius: 30px;
+    width: 75%;
+    padding :10px;
+    margin-bottom: 25px;
+    margin-top: 5%;;
+    letter-spacing: 1px;
+}
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: rgba(48, 51, 47, 0.5) 15px 35px 50px;
+}
+.right-content{
+    margin-left: -2%
+}
+
+.new-pass-btn:hover{
+    letter-spacing: 3px;
+    transition: 0.3s ease-in-out;
+    background-color: #4bb6b7;
+    color: #eee;
+    font-weight: bold;
+}
