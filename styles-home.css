@@ -69,15 +69,67 @@ p.big-carousel{
 }
 
 .left-container{
-    border: 3px solid black;
     margin-top: 30px;
 }
 .right-container{
-    border: 3px solid red;
+   
     margin-top: 30px;
 }
 .container-box{
     margin-top: 5%;
-    border: 1px solid black;
     box-shadow: rgba(48, 51, 47, 0.5) 0px 0px 8px 5px;
+}
+.big-texts{
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: large;
+}
+#filter-search{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: rgb(245, 245, 245);
+    border: 2px solid transparent;
+    padding-inline: 30px 10px;
+    transition: all 0.3s ease-in-out 0s ;
+    font-size: small;
+    
+}
+.filter-sort-search-btn{
+    width: 100%;
+    height: 35px;
+    margin-top:10px ;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: #c3c3c3;
+    color: white;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    font-size: small;
+}
+.filter-sort-search-btn:hover{
+    background-color: #4bb6b7;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+
+}
+#filter-search:hover{
+    border: 2px solid #4bb6b7 ;
+}
+#filer-search:focus{
+    border: 2px solid #4bb6b7 ;  
+}
+.sort-checkbox{
+    content: "";
+    color: transparent;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 0px;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: rgb(204, 211, 216) 0px 0px 0px 1px inset;
 }
