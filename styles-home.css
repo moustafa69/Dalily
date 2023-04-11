@@ -88,7 +88,7 @@ p.big-carousel{
 #filter-search{
     width: 100%;
     height: 40px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     margin-top: 5%;
     background: rgb(245, 245, 245);
     border: 2px solid transparent;
@@ -108,6 +108,7 @@ p.big-carousel{
     font-family: Poppins;
     letter-spacing: 1px;
     font-size: small;
+    margin-bottom: 5%;
 }
 .filter-sort-search-btn:hover{
     background-color: #4bb6b7;
@@ -123,13 +124,66 @@ p.big-carousel{
 }
 .sort-checkbox{
     content: "";
+    margin-bottom: 5%;
     color: transparent;
-    display: block;
-    width: inherit;
-    height: inherit;
     border-radius: inherit;
     border: 0px;
     background-color: transparent;
     background-size: contain;
     box-shadow: rgb(204, 211, 216) 0px 0px 0px 1px inset;
+}
+.sort-labels{
+    font-family: Poppins;
+    font-size: smaller;
+    cursor: pointer;
+}
+.element{
+    margin-top: 5%;
+}
+.element-picture{
+    width: 100px;
+    height: 100px;
+   
+    
+}
+.page-transition-btns{
+    justify-content: center;
+    display: flex;
+}
+ul>li{
+    list-style-type: none;
+    display: inline;
+}
+.before-footer{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+}
+.transition-btns{
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    background-color: #c3c3c3;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+#page-number{
+    background-color: #4bb6b7;
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+}
+.transition-btns:hover{
+    position: relative;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.arrows:hover{
+    position: relative;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
 }

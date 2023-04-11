@@ -51,6 +51,7 @@
                 <a href="/AboutUs.html" class="nav-link">About Us</a>
               </li>
             </ul>
+            <h6 style="margin-right: 20px;">Hi, User</h6>
             <form class="d-flex" role="search">
               <input class="form-control me-2 search" type="search" placeholder="Find what you like" aria-label="Search">
               <button class="btn btn-outline-success search_button" type="submit">Search</button>
@@ -110,16 +111,23 @@
         <div class="left-container col-md-3 col-12"> <!-- filter, sort-->
            <div class="upper-left ">
              <h6 class="big-texts">FILTER BY</h6>
-              <input type="text" name="filter_search" id="filter-search" placeholder="Search">
+              <input type="text" name="filter_search" id="filter-search" placeholder="Search...">
               <button class="filter-sort-search-btn">Apply</button>
               <hr>
            </div>
            <div class="lower-left">
             <h6 class="big-texts">SORT BY</h6>
-            <input class="sort-checkbox" type="checkbox" name="Recommended" id="Recommended_check"> Recommended  
-            <input class="sort-checkbox" type="checkbox" name="Alphabetic" id="Alphabetic_check">  Alphabetic
-            <input class="sort-checkbox" type="checkbox" name="Distance" id="Distance_check">  Distance
-            <input class="sort-checkbox"type="checkbox" name="Rating" id="Rating_check"> Rating
+            <input class="sort-checkbox" type="checkbox" name="Recommended" id="Recommended_check"> 
+            <label for="Recommended" class="sort-labels">Recommended</label>
+            <br>
+            <input class="sort-checkbox" type="checkbox" name="Alphabetic" id="Alphabetic_check">
+            <label class="sort-labels" for="Alphabetic">Alphabetic</label>
+            <br>
+            <input class="sort-checkbox" type="checkbox" name="Distance" id="Distance_check">
+            <label class="sort-labels" for="Distance">Distance</label>
+            <br>
+            <input class="sort-checkbox"type="checkbox" name="Rating" id="Rating_check"> 
+            <label class="sort-labels" for="Rating">Rating</label>
             <button class="filter-sort-search-btn">Apply</button>
            </div> 
         </div>
