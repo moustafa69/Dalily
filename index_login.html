@@ -13,18 +13,19 @@
     />
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles-login.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="big-container">
       <div class="container" id="container">
         <div class="row">
           <div class="form-container register-container col-md-6 col-sm">
-            <form action="#">
+            <form action="#" method="post" id="FormR">
               <h1>Register hire.</h1>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <button>Register</button>
+              <input type="text" placeholder="Name" id="NameR" />
+              <input type="email" placeholder="hi@example" id="EmailR" />
+              <input type="password" placeholder="Password" id="PasswordR" />
+              <button type="submit">Register</button>
               <span>or use your account</span>
               <div class="social-container">
                 <a href="#" class="social"
@@ -97,8 +98,6 @@
           </div>
         </div>
       </div>
-
-      <script src="script.js"></script>
     </div>
   </body>
 </html>
