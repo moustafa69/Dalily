@@ -11,7 +11,7 @@ loginButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
 });
 
-form.addEventListener("submit", (e) => {
+document.getElementById("registerBtn").addEventListener("click", (e) => {
   e.preventDefault();
   validateRegistrationForm();
 });
@@ -49,3 +49,48 @@ function validateRegistrationForm() {
   // Form is valid
   return true;
 }
+
+// registration
+document.getElementById("registerBtn").addEventListener("click", () => {
+  const username = document.getElementById("NameR").value;
+  const password = document.getElementById("PasswordR").value;
+  const email = document.getElementById("EmailR").value;
+  const req = new XMLHttpRequest();
+  req.open("POST", "http://localhost:3050/users/register");
+  req.setRequestHeader("Content-Type", "application/json");
+  req.send(JSON.stringify({ username, password, email }));
+  req.onreadystatechange = function () {
+    if (req.readyState === 4 && req.status === 201) {
+      let response = req.responseText;
+      response = JSON.parse(response);
+      alert("User Registered");
+      window.location.href = "index_login.html";
+      //window.location.href = "home.html";
+    }
+  };
+});
+
+// login
+
+document.getElementById("loginBtn").addEventListener("click", (e) => {
+  e.preventDefault();
+  const useremail = document.getElementById("login-email").value;
+  const password = document.getElementById("login-password").value;
+  const req = new XMLHttpRequest();
+  req.open("POST", "http://localhost:3050/users/login");
+  req.setRequestHeader("Content-Type", "application/json");
+  req.send(JSON.stringify({ useremail, password }));
+  req.onreadystatechange = function () {
+    if (req.readyState === 4 && req.status === 201) {
+      let response = req.responseText;
+      response = JSON.parse(response);
+      console.log(response);
+      localStorage.setItem("user", JSON.stringify(response));
+      window.location.href = "home.html";
+    } else if (req.readyState === 4 && req.status === 401) {
+      alert("Invalid Credentials");
+      username.value = "";
+      password.value = "";
+    }
+  };
+});

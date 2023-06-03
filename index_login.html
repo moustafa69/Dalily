@@ -20,12 +20,12 @@
       <div class="container" id="container">
         <div class="row">
           <div class="form-container register-container col-md-6 col-sm">
-            <form action="#" method="post" id="FormR">
+            <form>
               <h1>Register hire.</h1>
               <input type="text" placeholder="Name" id="NameR" />
               <input type="email" placeholder="hi@example" id="EmailR" />
               <input type="password" placeholder="Password" id="PasswordR" />
-              <button type="submit">Register</button>
+              <button id="registerBtn">Register</button>
               <span>or use your account</span>
               <div class="social-container">
                 <a href="#" class="social"
@@ -40,10 +40,14 @@
           </div>
 
           <div class="form-container login-container col-md-6 col-sm">
-            <form action="#">
-              <h1>Login hire.</h1>
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
+            <form>
+              <h1>Login here.</h1>
+              <input type="email" placeholder="Email" id="login-email" />
+              <input
+                type="password"
+                placeholder="Password"
+                id="login-password"
+              />
               <div class="content">
                 <div class="checkbox">
                   <input type="checkbox" name="checkbox" id="checkbox" />
@@ -53,7 +57,7 @@
                   <a href="#">Forgot password?</a>
                 </div>
               </div>
-              <button onclick="location.href='./Home.html'">Login</button>
+              <button id="loginBtn">Login</button>
               <span>or use your account</span>
               <div class="social-container">
                 <a href="#" class="social"
